@@ -1,0 +1,248 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+}
+
+body {
+font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.title {
+     padding-top: 100px;
+}
+.title svg {
+     display: block;
+     margin: auto;
+}
+
+#intro, #snippets, #access, #workflow, #companies, #download {
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+     margin: auto;
+     text-align: center;
+     margin-top: 80px;
+}
+
+#intro p {
+     margin-bottom: 50px;
+}
+
+h1 {
+     font-size: 3.5em;
+     color: hsl(210, 10%, 33%);
+     margin: 0;
+}
+
+
+h2 {
+     font-size: 3em;
+     color: hsl(210, 10%, 33%);
+}
+
+p {
+     font-size: 2em;
+     color: hsl(201, 11%, 66%);
+}
+
+.button {
+	border-radius:28px;
+	border:1px solid #2ea699;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.buttons {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+
+
+.ios {
+     box-shadow: 0px 5px 5px 0px #2ea699;
+	background-color:#38c7b7;
+	border:1px solid #2ea699;
+     margin-bottom: 30px;
+     width: 100%;
+}
+
+.mac {
+     background-color: #3075cf;
+     box-shadow: 0px 5px 5px 0px #2b6abb;
+     border:1px solid #2b6abb;
+}
+
+#snippets h2 {
+     margin-bottom: 0;
+}
+
+#snippets p {
+     margin-bottom: 50px;
+}
+
+#snippets img {
+     width: 50%;
+}
+
+#tablet {
+     display: block;
+     margin: 50px auto;
+     width: 90%;
+}
+
+#workflow svg {
+     display: block;
+     margin: 0px auto;
+}
+
+#companies img {
+     width: 50%;
+     display: block;
+     margin: 50px auto;
+}
+
+footer {
+     margin-top: 200px;
+     background-color:rgb(241, 246, 249);
+     display: flex;
+     flex-direction: column;
+}
+
+footer svg {
+     display: block;
+     margin: 100px auto;
+}
+
+.footer-link {
+     margin: auto;
+     text-decoration: none;
+     color: hsl(210, 10%, 33%);
+     font-size: 2.3em;
+     padding-bottom: 50px;
+}
+
+@media screen and (min-width: 400px) {
+     .button {
+          width: 20%;
+          height: 60px;
+     }
+
+     .buttons {
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 50px;
+     }
+
+     .mac {
+          margin-left: 20px;
+     }
+
+     #snippets > p {
+          width: 47%;
+          margin: 100px auto;
+     }
+
+     .snippet-section {
+          display: flex;
+     }
+
+     .snippet-section h2 {
+          width: 60%;
+          margin: auto;
+          text-align: justify;
+     }
+
+     .snippet-section p {
+          width: 60%;
+          margin: auto;
+          text-align: justify;
+     }
+
+     .work-highlights {
+          display: flex;
+          flex-direction: row;
+          margin-top: 50px;
+     }
+
+     .work-card {
+          display: flex;
+          flex-direction: column;
+          width: 33.333%;
+          padding-top: 20px;
+     }
+
+     #companies {
+          display: flex;
+          flex-direction: row;
+     }
+
+     #companies img {
+          display: block;
+          width: 10%;
+          height: 50px;
+     }
+
+     #tablet {
+          width: 60%;
+     }
+
+     footer {
+          display: flex;
+          flex-direction: row;
+     }
+
+     .footer-link {
+          padding-top: 20px;
+     }
+
+     .attribution {
+          align-self: flex-end;
+     }
+
+     
+}
